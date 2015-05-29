@@ -1,0 +1,12 @@
+pdflatex poster.tex
+
+# pdflatex poster.tex
+
+bibtex poster
+
+pdflatex poster.tex
+
+pdflatex poster.tex
+
+rm -rf poster.aux poster.snm poster.nav poster.bbl  poster.blg poster.log poster.tex~ poster.lot poster.lof poster.toc poster.out
+
