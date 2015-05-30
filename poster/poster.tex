@@ -56,6 +56,8 @@
 %-----------------------------------------------------------
 
 % \renewcommand{\sfdefault}{phv}
+% \renewcommand{\rmdefault}{ptm}
+
 
 \usepackage{graphicx}  % Required for including images
 
@@ -95,7 +97,7 @@
 
     \begin{alertblock}{Objectives}
 
-    Investigate the effect of the Southland Current (SC) on the coastal circulation at Pegasus Bay (PB) using a combination of long term realistic modelling and {\textit in situ} measurements.
+    Investigate the effect of the Southland Current (SC) on the coastal circulation at Pegasus Bay (PB) using a combination of long term realistic modelling and {\it in situ} measurements.
 
     \begin{enumerate}
     \item What is the contribution of the SC to the total currents on the inner shelf of PB?
@@ -114,16 +116,16 @@
     The East coast of New Zealand is a notably complex area in terms of interaction between oceanic and coastal circulation, due to the existence of important western boundary current systems flowing along the continental slopes and outer shelves (Jannelle \& Flemming, 2005). The SC is a northward/northeast-ward oceanic current that extends from Stewart Island in the south to the Chatham Rise in the north, formed at the subtropical convergence west of New Zealand (Chiswell, 1996). Most of it bends offshore towards the Chatham Rise (Figure \ref{schematics}), but a small portion bends towards PB, in the form of an anticyclonic eddy around BP (Carter \& Herzer, 1979). A net southerly alongshore depth-averaged transport is reported in previous work, potentially associated with an eddy in PB. 
     \begin{figure}
     \includegraphics[width=1.0\linewidth]{schematics.png}
-    \caption{\label{schematics} Circulation features off the east coast of New Zealand South Island. The green mark is the location of the observations. The blue mask is an arbitrary location within the SC path.}
+    \caption{\label{schematics} Circulation features off the east coast of New Zealand South Island. The green mark is the location of the observations. The blue mark is an arbitrary location within the SC path.}
     \end{figure}
 
 
     \end{block}
 
     %------------------------------------------------
-
-    \includegraphics[width=1.0\linewidth]{GordonCRC.jpg}
-
+    % \begin{center}
+    \includegraphics[width=0.7\linewidth]{msllogo.jpg}
+    % \end{center}
 
     %----------------------------------------------------------------------------------------
 
@@ -146,7 +148,7 @@
             A calibrated 10-year ROMS hindcast was carried out. Two different runs were undertaken. A CONTROL run consisted of full realistic hydrodynamical forcing (Figure \ref{domains} and Table \ref{roms_configs}) and a TEST run was deprived of most of the SC incoming flow (Table \ref{experiments}).  
 
             \begin{figure}
-            \includegraphics[width=0.9\linewidth]{domains.png}
+            \includegraphics[width=1.0\linewidth]{domains.png}
             \caption{\label{domains} Hindcast nesting approach with ROMS. See Tables \ref{experiments} and \ref{roms_configs} for more details.}
             \end{figure}
 
@@ -188,7 +190,7 @@
 
             \begin{block}{Results}
 
-            As in Figure \ref{mean_flow}, the SC clearly bifurcates, where some of the water recirculates into PB in the form of an anticyclonic eddy. There is a clear difference in the magnitude of the mean currents predicted by the different runs. The average flow from CONTROL explained 80\% of the observations, while TEST, only 33\%. 
+            As seen in Figure \ref{mean_flow}, the northeasterly flowing SC clearly bifurcates after crossing the 44.42$^\circ$ S parallel. Some of the water recirculates into PB in the form of an anticyclonic eddy. There is a clear difference in the magnitude of the mean currents predicted by the different runs. The average flow from CONTROL explained 80\% of the observations, while TEST, only 33\%. 
 
             \end{block}
 
@@ -205,13 +207,11 @@
             \caption{\label{mean_flow} Feb 2008 monthly mean depth-averaged stream lines for the CESI (a) and PEGASUS (b) ROMS domains. The arrows in (b) represents the average currents from the observations (gray), the CONTROL (red) and TEST (blue) simulations.}
             \end{figure}
 
-            According to Figure \ref{validation}, CONTROL shows good skill in reproducing the total currents. The residual currents are notably matched by the model for most events. TEST, however, produced relatively poor results.
-
-            A 20 h lag between perturbations in the SC and PB (Figure \ref{spectra}) seems to occur. The spectra confirms the variability match at time scales of western boundary current variability between both locations, corroborating a clear influence of the SC in the PB circulation. 
+            According to Figure \ref{validation}, CONTROL shows good skill in reproducing the total currents. The residual currents are notably matched by the model for most events. TEST, however, produced relatively poor results. A 20 h lag between perturbations in the SC and PB (Figure \ref{spectra}) seems to occur. The spectra confirms the variability match at time scales of western boundary current variability between both locations, corroborating a clear influence of the SC in the PB circulation. 
 
             \begin{figure}
             \includegraphics[width=1.0\linewidth]{pb-sc_5day-lowpass_time-series.png}
-            \caption{\label{spectra} Along shore current variability analysis of the CONTROL simulation. The locations shown in Figure \ref{mean_flow}, with the same color coding. }
+            \caption{\label{spectra} Along shore current variability analysis of the CONTROL simulation. The blue and green locations are shown in Figure \ref{mean_flow}a, with the same color coding. }
             \end{figure}
 
             \end{block}
@@ -222,15 +222,15 @@
 
     \end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
 
-    \begin{block}
+    % \begin{block}
 
     \begin{figure}
-    \includegraphics[width=0.76\linewidth]{validation.png}
-    \includegraphics[width=0.24\linewidth]{taylor.png}
-    \caption{\label{validation} Comparison of the CONTROL and TEST experiments with {\textit in situ} depth-averaged current measurements.}
+    \includegraphics[width=0.73\linewidth]{validation.png}
+    \includegraphics[width=0.27\linewidth]{taylor.png}
+    \caption{\label{validation} Comparison of the CONTROL and TEST experiments with {\it in situ} depth-averaged current measurements.}
     \end{figure}
 
-    \end{block}
+    % \end{block}
 %----------------------------------------------------------------------------------------
 
 
@@ -245,8 +245,8 @@
     A passive tracer point source was introduced in both experiments at a constant rate at the surface during 15 days, and than halted and allowed to evolve for 15 additional days. The plume extends over a greater spatial extent on CONTROL, especially in the SE direction. There is also more northward dispersion in CONTROL. The TEST run overestimates concentrations near the source and underestimates at larger distances. 
 
     \begin{figure}
-    \includegraphics[width=0.8\linewidth]{dye_concentration.png}\\
-    \includegraphics[width=0.8\linewidth]{dye_concentration_last-day.png}
+    \includegraphics[width=1.0\linewidth]{dye_concentration.png}\\
+    \includegraphics[width=1.0\linewidth]{dye_concentration_last-day.png}
     \caption{\label{dye} (a,b): First 15 day average tracer concentration. (d,e): Daily-averaged tracer concentration 15 days after source halt. (c,f): [TEST - CONTROL] for each case. }
     \end{figure}
 
@@ -324,11 +324,13 @@
 
     \end{block}
 
-    \begin{center}
-    \begin{tabular}{ccc}
+    \vspace{3.2cm}
+
+    \begin{flushright}
+    % \begin{tabular}{ccc}
     \includegraphics[width=0.7\linewidth]{msllogo.jpg}
-    \end{tabular}
-    \end{center}
+    % \end{tabular}
+    \end{flushright}
 
     %----------------------------------------------------------------------------------------
 
