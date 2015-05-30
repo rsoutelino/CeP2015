@@ -55,6 +55,8 @@
 \setlength{\topmargin}{-0.5in} % Reduce the top margin size
 %-----------------------------------------------------------
 
+% \renewcommand{\sfdefault}{phv}
+
 \usepackage{graphicx}  % Required for including images
 
 \usepackage{booktabs} % Top and bottom rules for tables
@@ -112,7 +114,7 @@
     The East coast of New Zealand is a notably complex area in terms of interaction between oceanic and coastal circulation, due to the existence of important western boundary current systems flowing along the continental slopes and outer shelves (Jannelle \& Flemming, 2005). The SC is a northward/northeast-ward oceanic current that extends from Stewart Island in the south to the Chatham Rise in the north, formed at the subtropical convergence west of New Zealand (Chiswell, 1996). Most of it bends offshore towards the Chatham Rise (Figure \ref{schematics}), but a small portion bends towards PB, in the form of an anticyclonic eddy around BP (Carter \& Herzer, 1979). A net southerly alongshore depth-averaged transport is reported in previous work, potentially associated with an eddy in PB. 
     \begin{figure}
     \includegraphics[width=1.0\linewidth]{schematics.png}
-    \caption{\label{schematics} Figure caption}
+    \caption{\label{schematics} Circulation features off the east coast of New Zealand South Island. The green mark is the location of the observations. The blue mask is an arbitrary location within the SC path.}
     \end{figure}
 
 
@@ -145,7 +147,7 @@
 
             \begin{figure}
             \includegraphics[width=0.9\linewidth]{domains.png}
-            \caption{\label{domains} Figure caption}
+            \caption{\label{domains} Hindcast nesting approach with ROMS. See Tables \ref{experiments} and \ref{roms_configs} for more details.}
             \end{figure}
 
             \begin{small}
@@ -160,7 +162,7 @@
             \textbf{TEST}    & CFSR $\rightarrow$ PEGASUS \\
             \bottomrule
             \end{tabular}
-            \caption{\label{experiments} Table caption}
+            \caption{\label{experiments} Description of the numerical experiments.}
             \end{table}
 
 
@@ -176,7 +178,7 @@
             \textbf{Meteo}      & WRF12km      & WRF12km      & WRF12km        \\
             \bottomrule
             \end{tabular}
-            \caption{\label{roms_configs} Table caption}
+            \caption{\label{roms_configs} ROMS domains configuration summary.}
             \end{table}
 
             \end{small}
@@ -200,7 +202,7 @@
 
             \begin{figure}
             \includegraphics[width=1.0\linewidth]{mean_flow.png}
-            \caption{\label{mean_flow} Figure caption}
+            \caption{\label{mean_flow} Feb 2008 monthly mean depth-averaged stream lines for the CESI (a) and PEGASUS (b) ROMS domains. The arrows in (b) represents the average currents from the observations (gray), the CONTROL (red) and TEST (blue) simulations.}
             \end{figure}
 
             According to Figure \ref{validation}, CONTROL shows good skill in reproducing the total currents. The residual currents are notably matched by the model for most events. TEST, however, produced relatively poor results.
@@ -209,7 +211,7 @@
 
             \begin{figure}
             \includegraphics[width=1.0\linewidth]{pb-sc_5day-lowpass_time-series.png}
-            \caption{\label{spectra} Figure caption}
+            \caption{\label{spectra} Along shore current variability analysis of the CONTROL simulation. The locations shown in Figure \ref{mean_flow}, with the same color coding. }
             \end{figure}
 
             \end{block}
@@ -220,12 +222,12 @@
 
     \end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
 
-    \begin{block}{Model Validation}
+    \begin{block}
 
     \begin{figure}
     \includegraphics[width=0.76\linewidth]{validation.png}
     \includegraphics[width=0.24\linewidth]{taylor.png}
-    \caption{\label{validation} Figure caption}
+    \caption{\label{validation} Comparison of the CONTROL and TEST experiments with {\textit in situ} depth-averaged current measurements.}
     \end{figure}
 
     \end{block}
@@ -245,7 +247,7 @@
     \begin{figure}
     \includegraphics[width=0.8\linewidth]{dye_concentration.png}\\
     \includegraphics[width=0.8\linewidth]{dye_concentration_last-day.png}
-    \caption{\label{dye} Figure caption}
+    \caption{\label{dye} (a,b): First 15 day average tracer concentration. (d,e): Daily-averaged tracer concentration 15 days after source halt. (c,f): [TEST - CONTROL] for each case. }
     \end{figure}
 
     \end{block}
@@ -299,7 +301,7 @@
 
     \begin{block}{Acknowledgements}
 
-    \small{\rmfamily{We thank the Lyttelton Port of Christchurch for making the measurements available and the ROMS scientific community. }} \\
+    \small{We thank the Lyttelton Port of Christchurch for making the measurements available and the ROMS scientific community. } \\
 
     \end{block}
 
