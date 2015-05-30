@@ -19,7 +19,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 %----------------------------------------------------------------------------------------
-%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%   PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
 %----------------------------------------------------------------------------------------
 
 \documentclass[final]{beamer}
@@ -47,7 +47,7 @@
 \newlength{\twocolwid}
 \newlength{\threecolwid}
 \setlength{\paperwidth}{48in} % A0 width: 46.8in
-\setlength{\paperheight}{36in} % A0 height: 33.1in
+\setlength{\paperheight}{40in} % A0 height: 33.1in
 \setlength{\sepwid}{0.024\paperwidth} % Separation width (white space) between columns
 \setlength{\onecolwid}{0.22\paperwidth} % Width of one column
 \setlength{\twocolwid}{0.464\paperwidth} % Width of two columns
@@ -60,7 +60,7 @@
 \usepackage{booktabs} % Top and bottom rules for tables
 
 %----------------------------------------------------------------------------------------
-%	TITLE SECTION 
+%   TITLE SECTION 
 %----------------------------------------------------------------------------------------
 
 \title{The influence of the Southland Current on the circulation within Pegasus Bay} % Poster title
@@ -87,42 +87,43 @@
 
 \begin{column}{\onecolwid} % The first column
 
-%----------------------------------------------------------------------------------------
-%	OBJECTIVES
-%----------------------------------------------------------------------------------------
+    %----------------------------------------------------------------------------------------
+    %   OBJECTIVES
+    %----------------------------------------------------------------------------------------
 
-\begin{alertblock}{Objectives}
+    \begin{alertblock}{Objectives}
 
-Lorem ipsum dolor sit amet, consectetur, nunc tellus pulvinar tortor, commodo eleifend risus arcu sed odio:
-\begin{itemize}
-\item Mollis dignissim, magna augue tincidunt dolor, interdum vestibulum urna
-\item Sed aliquet luctus lectus, eget aliquet leo ullamcorper consequat. Vivamus eros sem, iaculis ut euismod non, sollicitudin vel orci.
-\item Nascetur ridiculus mus.  
-\item Euismod non erat. Nam ultricies pellentesque nunc, ultrices volutpat nisl ultrices a.
-\end{itemize}
+    Investigate the effect of the Southland Current (SC) on the coastal circulation at Pegasus Bay (PB) using a combination of long term realistic modelling and {\textit in situ} measurements.
 
-\end{alertblock}
+    \begin{enumerate}
+    \item What is the contribution of the SC to the total currents on the inner shelf of PB?
+    \item What is the impact of remote forcing in modelling efforts at the inner shelf of PB?
+    \item What are the implications of underestimating the SC flow in the prediction of arbitrary passive tracers transport and dispersion in PB?
+    \end{enumerate}
 
-%----------------------------------------------------------------------------------------
-%	INTRODUCTION
-%----------------------------------------------------------------------------------------
+    \end{alertblock}
 
-\begin{block}{Introduction}
+    %----------------------------------------------------------------------------------------
+    %   INTRODUCTION
+    %----------------------------------------------------------------------------------------
 
-Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed commodo molestie porta. Sed ultrices scelerisque sapien ac commodo. Donec ut volutpat elit. Sed laoreet accumsan mattis. Integer sapien tellus, auctor ac blandit eget, sollicitudin vitae lorem. Praesent dictum tempor pulvinar. Suspendisse potenti. Sed tincidunt varius ipsum, et porta nulla suscipit et. Etiam congue bibendum felis, ac dictum augue cursus a. \textbf{Donec} magna eros, iaculis sit amet placerat quis, laoreet id est. In ut orci purus, interdum ornare nibh. Pellentesque pulvinar, nibh ac malesuada accumsan, urna nunc convallis tortor, ac vehicula nulla tellus eget nulla. Nullam lectus tortor, \textit{consequat tempor hendrerit} quis, vestibulum in diam. Maecenas sed diam augue.
+    \begin{block}{Introduction}
 
-This statement requires citation \cite{Smith:2012qr}.
+    The East coast of New Zealand is a notably complex area in terms of interaction between oceanic and coastal circulation, due to the existence of important western boundary current systems flowing along the continental slopes and outer shelves (Jannelle \& Flemming, 2005). The SC is a northward/northeast-ward oceanic current that extends from Stewart Island in the south to the Chatham Rise in the north, formed at the subtropical convergence west of New Zealand (Chiswell, 1996). Most of it bends offshore towards the Chatham Rise (Figure \ref{schematics}), but a small portion bends towards PB, in the form of an anticyclonic eddy around BP (Carter \& Herzer, 1979). A net southerly alongshore depth-averaged transport is reported in previous work, potentially associated with an eddy in PB. 
+    \begin{figure}
+    \includegraphics[width=1.0\linewidth]{schematics.png}
+    \caption{\label{schematics} Figure caption}
+    \end{figure}
 
-\end{block}
 
-%------------------------------------------------
+    \end{block}
 
-\begin{figure}
-\includegraphics[width=0.8\linewidth]{schematics.png}
-\caption{Figure caption}
-\end{figure}
+    %------------------------------------------------
 
-%----------------------------------------------------------------------------------------
+    \includegraphics[width=1.0\linewidth]{GordonCRC.jpg}
+
+
+    %----------------------------------------------------------------------------------------
 
 \end{column} % End of the first column
 
@@ -130,152 +131,106 @@ This statement requires citation \cite{Smith:2012qr}.
 
 \begin{column}{\twocolwid} % Begin a column which is two columns wide (column 2)
 
-\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
+    \begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column
 
-\begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
+        \begin{column}{\onecolwid}\vspace{-.6in} % The first column within column 2 (column 2.1)
 
-%----------------------------------------------------------------------------------------
-%	MATERIALS
-%----------------------------------------------------------------------------------------
+            %----------------------------------------------------------------------------------------
+            %   MATERIALS
+            %----------------------------------------------------------------------------------------
 
-\begin{block}{Materials}
+            \begin{block}{Methods}
 
-The following materials were required to complete the research:
+            A calibrated 10-year ROMS hindcast was carried out. Two different runs were undertaken. A CONTROL run consisted of full realistic hydrodynamical forcing (Figure \ref{domains} and Table \ref{roms_configs}) and a TEST run was deprived of most of the SC incoming flow (Table \ref{experiments}).  
 
-\begin{itemize}
-\item Curabitur pellentesque dignissim
-\item Eu facilisis est tempus quis
-\item Duis porta consequat lorem
-\item Eu facilisis est tempus quis
-\end{itemize}
+            \begin{figure}
+            \includegraphics[width=0.9\linewidth]{domains.png}
+            \caption{\label{domains} Figure caption}
+            \end{figure}
 
-The materials were prepared according to the steps outlined below:
+            \begin{small}
 
-\begin{enumerate}
-\item Curabitur pellentesque dignissim
-\item Eu facilisis est tempus quis
-\item Duis porta consequat lorem
-\item Curabitur pellentesque dignissim
-\end{enumerate}
+            \begin{table}
+            \vspace{2ex}
+            \begin{tabular}{l c}
+            \toprule
+            \textbf{Experiment} & \textbf{Nests} \\
+            \midrule
+            \textbf{CONTROL} & CFSR $\rightarrow$ NZ $\rightarrow$ CESI $\rightarrow$ PEGASUS \\
+            \textbf{TEST}    & CFSR $\rightarrow$ PEGASUS \\
+            \bottomrule
+            \end{tabular}
+            \caption{\label{experiments} Table caption}
+            \end{table}
 
-\end{block}
 
-%----------------------------------------------------------------------------------------
+            \begin{table}
+            \vspace{2ex}
+            \begin{tabular}{l c c c}
+            \toprule
+                                & \textbf{NZ}  & \textbf{CESI} & \textbf{PEGASUS} \\
+            \midrule
+            \textbf{Resolution} & 0.08$^\circ$ & 0.03$^\circ$ & 0.004$^\circ$ \\
+            \textbf{Boundary}   & CFSR         & NZ           & CESI          \\
+            \textbf{Tides}      & No           & No           & Yes           \\
+            \textbf{Meteo}      & WRF12km      & WRF12km      & WRF12km        \\
+            \bottomrule
+            \end{tabular}
+            \caption{\label{roms_configs} Table caption}
+            \end{table}
 
-\end{column} % End of column 2.1
+            \end{small}
 
-\begin{column}{\onecolwid}\vspace{-.6in} % The second column within column 2 (column 2.2)
 
-%----------------------------------------------------------------------------------------
-%	METHODS
-%----------------------------------------------------------------------------------------
+            \end{block}
 
-\begin{block}{Methods}
+            \begin{block}{Results}
 
-\begin{figure}
-\includegraphics[width=0.8\linewidth]{domains.png}
-\caption{Figure caption}
-\end{figure}
+            As in Figure \ref{mean_flow}, the SC clearly bifurcates, where some of the water recirculates into PB in the form of an anticyclonic eddy. There is a clear difference in the magnitude of the mean currents predicted by the different runs. The average flow from CONTROL explained 80\% of the observations, while TEST, only 33\%. 
 
-\end{block}
+            \end{block}
 
-%----------------------------------------------------------------------------------------
+            %----------------------------------------------------------------------------------------
 
-\end{column} % End of column 2.2
+        \end{column} % End of column 2.1
 
-\end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
+        \begin{column}{\onecolwid}\vspace{-.6in} % The second column within column 2 (column 2.2)
 
-%----------------------------------------------------------------------------------------
-%	IMPORTANT RESULT
-%----------------------------------------------------------------------------------------
+            \begin{block}
 
-\begin{alertblock}{Important Result}
+            \begin{figure}
+            \includegraphics[width=1.0\linewidth]{mean_flow.png}
+            \caption{\label{mean_flow} Figure caption}
+            \end{figure}
 
-Lorem ipsum dolor \textbf{sit amet}, consectetur adipiscing elit. Sed commodo molestie porta. Sed ultrices scelerisque sapien ac commodo. Donec ut volutpat elit.
+            According to Figure \ref{validation}, CONTROL shows good skill in reproducing the total currents. The residual currents are notably matched by the model for most events. TEST, however, produced relatively poor results.
 
-\end{alertblock} 
+            A 20 h lag between perturbations in the SC and PB (Figure \ref{spectra}) seems to occur. The spectra confirms the variability match at time scales of western boundary current variability between both locations, corroborating a clear influence of the SC in the PB circulation. 
 
-%----------------------------------------------------------------------------------------
+            \begin{figure}
+            \includegraphics[width=1.0\linewidth]{pb-sc_5day-lowpass_time-series.png}
+            \caption{\label{spectra} Figure caption}
+            \end{figure}
 
-\begin{columns}[t,totalwidth=\twocolwid] % Split up the two columns wide column again
+            \end{block}
 
-\begin{column}{\onecolwid} % The first column within column 2 (column 2.1)
+            %----------------------------------------------------------------------------------------
 
-%----------------------------------------------------------------------------------------
-%	MATHEMATICAL SECTION
-%----------------------------------------------------------------------------------------
+        \end{column} % End of column 2.2
 
-\begin{block}{Mathematical Section}
+    \end{columns} % End of the split of column 2 - any content after this will now take up 2 columns width
 
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
-  
-\begin{equation}
-E = mc^{2}
-\label{eqn:Einstein}
-\end{equation}
+    \begin{block}{Model Validation}
 
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
+    \begin{figure}
+    \includegraphics[width=0.76\linewidth]{validation.png}
+    \includegraphics[width=0.24\linewidth]{taylor.png}
+    \caption{\label{validation} Figure caption}
+    \end{figure}
 
-\begin{equation}
-\cos^3 \theta =\frac{1}{4}\cos\theta+\frac{3}{4}\cos 3\theta
-\label{eq:refname}
-\end{equation}
-
-Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin. Nam quis odio enim, in molestie libero. Vivamus cursus mi at nulla elementum sollicitudin.
-
-\begin{equation}
-\kappa =\frac{\xi}{E_{\mathrm{max}}} %\mathbb{ZNR}
-\end{equation}
-
-\end{block}
-
-%----------------------------------------------------------------------------------------
-
-\end{column} % End of column 2.1
-
-\begin{column}{\onecolwid} % The second column within column 2 (column 2.2)
-
-%----------------------------------------------------------------------------------------
-%	RESULTS
+    \end{block}
 %----------------------------------------------------------------------------------------
 
-\begin{block}{Results}
-
-Nunc tempus venenatis facilisis. Curabitur suscipit consequat eros non porttitor. Sed a massa dolor, id ornare enim:
-
-\begin{figure}
-\includegraphics[width=0.8\linewidth]{mean_flow.png}
-\caption{Figure caption}
-\end{figure}
-
-
-\begin{figure}
-\includegraphics[width=0.8\linewidth]{validation.png}
-\caption{Figure caption}
-\end{figure}
-
-
-% \begin{table}
-% \vspace{2ex}
-% \begin{tabular}{l l l}
-% \toprule
-% \textbf{Treatments} & \textbf{Response 1} & \textbf{Response 2}\\
-% \midrule
-% Treatment 1 & 0.0003262 & 0.562 \\
-% Treatment 2 & 0.0015681 & 0.910 \\
-% Treatment 3 & 0.0009271 & 0.296 \\
-% \bottomrule
-% \end{tabular}
-% \caption{Table caption}
-% \end{table}
-
-\end{block}
-
-%----------------------------------------------------------------------------------------
-
-\end{column} % End of column 2.2
-
-\end{columns} % End of the split of column 2
 
 \end{column} % End of the second column
 
@@ -283,91 +238,97 @@ Nunc tempus venenatis facilisis. Curabitur suscipit consequat eros non porttitor
 
 \begin{column}{\onecolwid} % The third column
 
-%----------------------------------------------------------------------------------------
-%	CONCLUSION
-%----------------------------------------------------------------------------------------
+    \begin{block}{Plume propagation}
 
-\begin{block}{Conclusion}
+    A passive tracer point source was introduced in both experiments at a constant rate at the surface during 15 days, and than halted and allowed to evolve for 15 additional days. The plume extends over a greater spatial extent on CONTROL, especially in the SE direction. There is also more northward dispersion in CONTROL. The TEST run overestimates concentrations near the source and underestimates at larger distances. 
 
-Nunc tempus venenatis facilisis. \textbf{Curabitur suscipit} consequat eros non porttitor.
+    \begin{figure}
+    \includegraphics[width=0.8\linewidth]{dye_concentration.png}\\
+    \includegraphics[width=0.8\linewidth]{dye_concentration_last-day.png}
+    \caption{\label{dye} Figure caption}
+    \end{figure}
 
-\begin{figure}
-\includegraphics[width=0.5\linewidth]{taylor.png}
-\caption{Figure caption}
-\end{figure}
+    \end{block}
 
-\begin{figure}
-\includegraphics[width=0.8\linewidth]{dye_concentration.png}\\
-\includegraphics[width=0.8\linewidth]{dye_concentration_last-day.png}
-\caption{Figure caption}
-\end{figure}
+    \setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
 
+    \begin{alertblock}{Conclusions}
 
-\end{block}
+    \begin{small}
+    \begin{enumerate}
+    \item The SC has a substantial influence in the circulation at PB, accounting for more than half of the total currents at times and controling most of its variability.
+    \item The absence of proper open ocean forcing greatly affects model performance for this particular area.
+    \item Underestimating the SC implies in less efficient dispersion of passive tracer plumes at the PB inner shelf. 
+    \end{enumerate}
+    \end{small}
 
-%----------------------------------------------------------------------------------------
-%	ADDITIONAL INFORMATION
-%----------------------------------------------------------------------------------------
+    \end{alertblock}
 
-% \begin{block}{Additional Information}
+    %----------------------------------------------------------------------------------------
+    %   ADDITIONAL INFORMATION
+    %----------------------------------------------------------------------------------------
 
-% Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius dictum. 
-% \begin{itemize}
-% \item Curabitur pellentesque dignissim
-% \item Eu facilisis est tempus quis
-% \item Duis porta consequat lorem
-% \end{itemize}
+    % \begin{block}{Additional Information}
 
-% \end{block}
+    % Maecenas ultricies feugiat velit non mattis. Fusce tempus arcu id ligula varius dictum. 
+    % \begin{itemize}
+    % \item Curabitur pellentesque dignissim
+    % \item Eu facilisis est tempus quis
+    % \item Duis porta consequat lorem
+    % \end{itemize}
 
-%----------------------------------------------------------------------------------------
-%	REFERENCES
-%----------------------------------------------------------------------------------------
+    % \end{block}
 
-% \begin{block}{References}
+    %----------------------------------------------------------------------------------------
+    %   REFERENCES
+    %----------------------------------------------------------------------------------------
 
-% \nocite{*} % Insert publications even if they are not cited in the poster
-% \small{\bibliographystyle{unsrt}
-% \bibliography{sample}\vspace{0.75in}}
+    % \begin{block}{References}
 
-% \end{block}
+    % \nocite{*} % Insert publications even if they are not cited in the poster
+    % \small{\bibliographystyle{unsrt}
+    % \bibliography{sample}\vspace{0.75in}}
 
-%----------------------------------------------------------------------------------------
-%	ACKNOWLEDGEMENTS
-%----------------------------------------------------------------------------------------
+    % \end{block}
 
-\setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
+    %----------------------------------------------------------------------------------------
+    %   ACKNOWLEDGEMENTS
+    %----------------------------------------------------------------------------------------
 
-\begin{block}{Acknowledgements}
+    \setbeamercolor{block title}{fg=red,bg=white} % Change the block title color
 
-\small{\rmfamily{Nam mollis tristique neque eu luctus. Suspendisse rutrum congue nisi sed convallis. Aenean id neque dolor. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas.}} \\
+    \begin{block}{Acknowledgements}
 
-\end{block}
+    \small{\rmfamily{We thank the Lyttelton Port of Christchurch for making the measurements available and the ROMS scientific community. }} \\
 
-%----------------------------------------------------------------------------------------
-%	CONTACT INFORMATION
-%----------------------------------------------------------------------------------------
+    \end{block}
 
-\setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
-\setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
+    %----------------------------------------------------------------------------------------
+    %   CONTACT INFORMATION
+    %----------------------------------------------------------------------------------------
 
-\begin{block}{Contact Information}
+    \setbeamercolor{block alerted title}{fg=black,bg=norange} % Change the alert block title colors
+    \setbeamercolor{block alerted body}{fg=black,bg=white} % Change the alert block body colors
 
-\begin{itemize}
-\item \href{http://www.metoceanview.com}{http://www.metoceanview.com}
-\item \href{http://www.rsoutelino.com}{http://www.rsoutelino.com}
-\item Email: \href{mailto:r.soutelino@metocean.co.nz}{r.soutelino@metocean.co.nz}
-\end{itemize}
+    \begin{block}{Contact Information}
 
-\end{block}
+    \begin{small}
+    \begin{itemize}
+    \item \href{http://www.metoceanview.com}{http://www.metoceanview.com}
+    \item \href{http://www.rsoutelino.com}{http://www.rsoutelino.com}
+    \item Email: \href{mailto:r.soutelino@metocean.co.nz}{r.soutelino@metocean.co.nz}
+    \end{itemize}
+    \end{small}
 
-\begin{center}
-\begin{tabular}{ccc}
-\includegraphics[width=0.6\linewidth]{msllogo.jpg}
-\end{tabular}
-\end{center}
+    \end{block}
 
-%----------------------------------------------------------------------------------------
+    \begin{center}
+    \begin{tabular}{ccc}
+    \includegraphics[width=0.7\linewidth]{msllogo.jpg}
+    \end{tabular}
+    \end{center}
+
+    %----------------------------------------------------------------------------------------
 
 \end{column} % End of the third column
 
